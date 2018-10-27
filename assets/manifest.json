@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "NicoNico mylist benri",
+    "description": "ニコ動のマイリストを整理します",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nicovideo.jp/my/mylist/*"
+            ],
+            "js": ["script.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+    ]
+}
